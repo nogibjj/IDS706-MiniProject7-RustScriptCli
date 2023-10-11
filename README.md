@@ -31,26 +31,6 @@ In this lab you will gain experience extending an existing Rust project by forki
 7. Commit your changes and push to your forked repository
 
 
-**Deliverable**
-
-Submit a link to your forked repository showing the code changes.
-
-
-**Goals**
-
-This hands-on lab provides experience with:
-
-- Forking and cloning a Rust project
-
-- Modifying existing Rust code 
-
-- Running `cargo build` and `cargo run`
-
-- Version control with git
-
-- Making a pull request (optional)
-
-
 ### Technical Notes
 
 ## Makefile
@@ -75,6 +55,8 @@ all: format lint test run
 
 
 ## References
+
+1. https://github.com/nogibjj/rust-data-engineering
 
 * [Rust Collections](https://doc.rust-lang.org/std/collections/index.html)
 * [GitHub Copilot CLI](https://www.npmjs.com/package/@githubnext/github-copilot-cli)
