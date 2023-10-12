@@ -1,5 +1,5 @@
 [![Clippy](https://github.com/nogibjj/IDS706-MiniProject7-RustScriptCli/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/IDS706-MiniProject7-RustScriptCli/actions/workflows/lint.yml)
-[![Tests](https://github.com/nogibjj/IDS706-MiniProject7-RustScriptCli/workflows/tests.yml/badge.svg)](https://github.com/nogibjj/IDS706-MiniProject7-RustScriptCli/actions/workflows/tests.yml)
+[![Tests](https://github.com/nogibjj/IDS706-MiniProject7-RustScriptCli/actions/workflows/tests.yml/badge.svg)](https://github.com/nogibjj/IDS706-MiniProject7-RustScriptCli/actions/workflows/tests.yml)
 
 
 # Rust Data Engineering
