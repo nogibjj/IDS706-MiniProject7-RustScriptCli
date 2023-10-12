@@ -8,50 +8,63 @@
 
 > Duke University IDS 706 Weekly Mini Project 7
 
+Requirements: Package a Python script into a command-line tool and write a user guide.
 
-### Lab:  Modifying a Rust Command-Line Tool
+## Project Description
 
-In this lab you will gain experience extending an existing Rust project by forking and modifying a simple command-line tool.
-
-**Steps**
-4. Make a small modification to the tool such as:
-
-   - Adding a new command line argument
-    
-   - Supporting additional input file formats
-    
-   - Adding more processing logic
-    
-   - Changing output formatting
-
-5. Run `cargo build` to compile your changes  
-
-6. Run `cargo run` to test your modified tool
-
-7. Commit your changes and push to your forked repository
+This project is a simple command-line tool that implements a Caesar cipher.  The tool takes a text file as input and outputs the encrypted text to a file.  The tool also supports decrypting the text file.
 
 
-### Technical Notes
+## Pre-preparation
 
-## Makefile
+1. Install Rust
+- `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+2. Clone this repository or download the source code.
+3. Navigate to the project directory `caesar-cipher`.
+   - run `"cargo clean"` to clean the project.
+   - run `"cargo build"` to build the project.
+4. Or go to the directory `caesar-cipher` and run the command `cargo run -- -h` to see the help message.
 
-Each subdirectory project uses this style to make it easy to test and run
+## Usage
 
+After you have built the project, you can run the command `cargo run -- -h` to see the help message.
+
+![img.png](img.png)
+
+### Option1:
+You could run by the following command by the help message.
+
+```bash
+ target/debug/caesar-cipher-tool <plaintext> <shift>
 ```
-format:
-	cargo fmt --quiet
 
-lint:
-	cargo clippy --quiet
-
-test:
-	cargo test --quiet
-
-run:
-	cargo run 
-
-all: format lint test run
+### Examples:
+```bash
+target/debug/caesar-cipher-tool "apple" 3 
 ```
+![img_1.png](img_1.png)
+
+
+### Option2:
+
+You could also run by using cargo:
+
+```bash
+cargo run <plaintext> <shift>
+```
+
+### Examples:
+```bash
+cargo run "apple" 3 
+```
+
+![img_2.png](img_2.png)
+
+## Test
+
+run `cargo test`
+
+![img_3.png](img_3.png)
 
 
 ## References
